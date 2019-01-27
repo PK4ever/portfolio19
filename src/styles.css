@@ -4,4 +4,14 @@ router-outlet ~ * {
   height: 100%;
   width: 100%;
 }
-
+router-outlet ~app-home{
+  background-color: gray;
+}
+router-outlet ~app-about-me{
+  background-color: aqua;
+}
+router-outlet ~app-projects{
+  background-color: burlywood;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

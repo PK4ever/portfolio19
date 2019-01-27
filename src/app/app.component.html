@@ -1,8 +1,36 @@
-<div class="flex-container">
-  <i routerLink="">home</i>
-  <i routerLink="about">about me</i>
-</div>
 
-<main [@slideTransitionAnimation]="o.isActivated ? o.activatedRoute: ''">
-  <router-outlet #o="outlet"></router-outlet>
-</main>
+<!--<mat-drawer-container class="page_drawer_container">-->
+  <!--<mat-drawer mode="side" opened>-->
+    <!--<i routerLink="" class="material-icons">home</i>-->
+    <!--<i routerLink="about" class="material-icons">face</i>-->
+  <!--</mat-drawer>-->
+  <!--<mat-drawer-content>-->
+    <!--<main [@slideTransitionAnimation]="o.isActivated ? o.activatedRoute: ''">-->
+      <!--<router-outlet #o="outlet"></router-outlet>-->
+    <!--</main>-->
+  <!--</mat-drawer-content>-->
+<!--</mat-drawer-container>-->
+
+<mat-sidenav-container class="side_nav">
+  <mat-sidenav opened mode="side">
+    <div class="nav_list">
+      <mat-list-item>
+        <i routerLink="" class="material-icons">home</i>
+      </mat-list-item>
+      <mat-list-item>
+        <i routerLink="about" class="material-icons">perm_identity</i>
+      </mat-list-item>
+    <mat-list-item>
+      <i routerLink="projects" class="material-icons">assignment</i>
+    </mat-list-item>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main [@slideTransitionAnimation]="o.isActivated ? o.activatedRoute: ''">
+      <router-outlet #o="outlet"></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+

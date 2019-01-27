@@ -1,5 +1,17 @@
-.homePage{
-  background-color: cadetblue;
-  width: 100%;
-  height: 100%;
+.roles-container{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 100px;
+}
+.roles {
+  font-size: 30px;
+  height: 50px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.roles div {
+  height: 50px;
+  transition: margin-top 1s ease-in-out;
 }

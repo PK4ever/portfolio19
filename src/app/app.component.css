@@ -13,10 +13,29 @@
 .nav_list{
   width: 100%;
   text-align: center;
-  /*height: 100%;*/
-  line-height: 100px;
+  /*line-height: 100px;*/
   position: absolute;
   top: 30%;
+  list-style-type:none;
+}
+.nav-list-item{
+  height: 120px;
+  width: 80px;
+}
+.nav-list-item > div{
+  outline: none;
+}
+.nav-list-item > div:focus{
+  color: gray;
+}
+
+.nav-list-item:hover{
+  font-size: 16px;
+  /*color: gray;*/
+  cursor: pointer;
+}
+.nav-list-item:hover .material-icons{
+  font-size: 38px;
 }
 
 mat-sidenav{
@@ -24,9 +43,14 @@ mat-sidenav{
   width: 10%;
   height: 100%;
   /*margin-top: 300px;*/
+  background-image: url(../assets/vertical_cloth.png);
+  background-repeat:repeat;
+  color: #316999;
 }
 mat-sidenav-content{
-  background-color: black;
+  background-color:#080808;
 }
+
+
 
 

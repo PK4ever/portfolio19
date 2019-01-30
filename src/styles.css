@@ -1,17 +1,32 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
 /* You can add global styles to this file, and also import other style files */
+
 router-outlet ~ * {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 router-outlet ~app-home{
-  background-color: gray;
+  background-color:#080808;
+  background-image: url(../src/assets/51034505_753613538352316_90172245674033152_n.png);
+  background-position: right;
+  background-position-x: 85%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 router-outlet ~app-about-me{
-  background-color: aqua;
+  background-color: #ffffff;
+  color: black;
 }
 router-outlet ~app-projects{
   background-color: burlywood;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Times New Roman", Times, serif;}
+
+.flex-container > div{
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
+
+

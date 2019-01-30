@@ -13,17 +13,29 @@
 
 <mat-sidenav-container class="side_nav">
   <mat-sidenav opened mode="side">
-    <div class="nav_list">
-      <mat-list-item>
-        <i routerLink="" class="material-icons">home</i>
-      </mat-list-item>
-      <mat-list-item>
-        <i routerLink="about" class="material-icons">perm_identity</i>
-      </mat-list-item>
-    <mat-list-item>
-      <i routerLink="projects" class="material-icons">assignment</i>
-    </mat-list-item>
-    </div>
+    <ul class="nav_list">
+      <li class="nav-list-item">
+        <div routerLink="" id="home">
+        <i class="material-icons">home</i>
+          <br>
+          Home
+        </div>
+      </li>
+      <li class="nav-list-item">
+        <div routerLink="about">
+        <i class="material-icons">perm_identity</i>
+        <br>
+        About Me
+        </div>
+      </li>
+      <li class="nav-list-item">
+        <div routerLink="projects">
+        <i class="material-icons">assignment</i>
+        <br>
+        Projects
+        </div>
+      </li>
+    </ul>
   </mat-sidenav>
   <mat-sidenav-content>
     <main [@slideTransitionAnimation]="o.isActivated ? o.activatedRoute: ''">

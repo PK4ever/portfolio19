@@ -1,17 +1,73 @@
 .roles-container{
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
+  /*width: 500px;*/
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
   display: block;
-  padding: 100px;
+  /*padding: 100px;*/
+  /*margin-left: -100px;*/
+  /*text-align: left;*/
+  /*width: fit-content;*/
+  /*margin: auto;*/
 }
 .roles {
-  font-size: 30px;
+  font-size: 32px;
   height: 50px;
   vertical-align: middle;
   overflow: hidden;
+  /*margin: auto;*/
+  margin-top: 20px;
+  padding: 0;
+  color: #316999;
 }
 .roles div {
   height: 50px;
   transition: margin-top 1s ease-in-out;
+  text-align: left;
+  margin-left: 10px;
 }
+.greeting{
+  /*width: fit-content;*/
+}
+
+/*.greeting{*/
+  /*margin-left: auto;*/
+  /*text-align: center;*/
+  /*width: fit-content;*/
+  /*margin-top: 80px;*/
+  /*!*margin: auto;*!*/
+/*}*/
+/*.greeting_div{*/
+  /*width: fit-content;*/
+  /*margin-top: 200px;*/
+  /*!*margin-top: auto;*!*/
+/*}*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  height: 40%;
+  align-items: flex-end;
+}
+
+.flex-container > div {
+  text-align: center;
+  font-family:"Times New Roman", Times, serif;
+  /*font-size: 30px;*/
+}
+
+.roles-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 5%;
+  /*justify-content: center;*/
+  align-items: center;
+}
+.roles-container > div {
+  text-align: center;
+  /*font-size: 30px;*/
+  font-family: "Times New Roman", Times, serif;
+}
+

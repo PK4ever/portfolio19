@@ -1,3 +1,16 @@
-<h1>
-  projects works!
-</h1>
+<div class="row projects-container">
+  <div class="col-md-4 text-center" *ngFor="let project of projects">
+    <div class="panel panel-default">
+      <div class="page-heading">
+        <h2>{{project.name}}</h2>
+        <hr>
+      </div>
+      <div class="panel-body">
+        {{project.description}}
+      </div>
+      <div class="panel-footer">
+        site github
+      </div>
+    </div>
+  </div>
+</div>

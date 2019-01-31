@@ -17,9 +17,14 @@ router-outlet ~app-home{
 router-outlet ~app-about-me{
   background-color: #ffffff;
   color: black;
+  min-height: 100%;
+  height: fit-content;
 }
 router-outlet ~app-projects{
-  background-color: burlywood;
+  background-color: white;
+  min-height: 100%;
+  height: fit-content;
+  color: black;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: "Times New Roman", Times, serif;}

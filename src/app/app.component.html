@@ -1,39 +1,35 @@
-
-<!--<mat-drawer-container class="page_drawer_container">-->
-  <!--<mat-drawer mode="side" opened>-->
-    <!--<i routerLink="" class="material-icons">home</i>-->
-    <!--<i routerLink="about" class="material-icons">face</i>-->
-  <!--</mat-drawer>-->
-  <!--<mat-drawer-content>-->
-    <!--<main [@slideTransitionAnimation]="o.isActivated ? o.activatedRoute: ''">-->
-      <!--<router-outlet #o="outlet"></router-outlet>-->
-    <!--</main>-->
-  <!--</mat-drawer-content>-->
-<!--</mat-drawer-container>-->
-
 <mat-sidenav-container class="side_nav">
   <mat-sidenav opened mode="side" class="mat-side-nav">
+    <img routerLink="" class="logo" src="../assets/logo.png" width="50px">
     <ul class="nav_list">
       <li class="nav-list-item">
         <div routerLink="" id="home">
         <i class="material-icons">home</i>
           <br>
-          Home
+          <span class="iconLabel">Home</span>
         </div>
       </li>
       <li class="nav-list-item">
         <div routerLink="about">
         <i class="material-icons">perm_identity</i>
         <br>
-        About Me
+          <span class="iconLabel">About Me</span>
         </div>
       </li>
       <li class="nav-list-item">
         <div routerLink="projects">
         <i class="material-icons">assignment</i>
         <br>
-        Projects
+          <span class="iconLabel">Projects</span>
         </div>
+      </li>
+      <li class="nav-list-item">
+          <!--<i class="material-icons">assignment</i>-->
+        <a href="https://drive.google.com/file/d/0Bx94BPv5Q5_zN2FyREc5SnM0REhxaEwwdFRXN0M0U2RsODl3/view?usp=sharing">
+          <i class="fas fa-file-download fa-2x"></i>
+          <br>
+        <span class="iconLabel">Resume</span>
+        </a>
       </li>
     </ul>
   </mat-sidenav>

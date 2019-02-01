@@ -46,6 +46,11 @@
     width: 140px;
   }
 }
+@media (max-width:641px){
+  .logo{
+    width: 30px;
+  }
+}
 mat-sidenav{
   background-color: black;
   /*width: 10%;*/
@@ -60,7 +65,12 @@ mat-sidenav{
 mat-sidenav-content{
   background-color:#080808;
 }
-
-
-
+.iconLabel{
+  color: #a0a0a0;
+}
+.logo{
+  margin-top: 20px;
+  margin-left: 30%;
+  outline: none;
+}
 

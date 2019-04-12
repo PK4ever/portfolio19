@@ -9,7 +9,7 @@
   font-size: 30px;
 }
 .section-header{
-  margin-top: 90px;
+  /*margin-top: 90px;*/
   color: #316999;
 }
 
@@ -23,7 +23,7 @@
 }
 @media (min-width:641px){
   .about{
-    width: 50%;
+    width: 90%;
   }
 }
 .more{

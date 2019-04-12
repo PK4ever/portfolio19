@@ -10,8 +10,7 @@ export class ProjectsComponent implements OnInit {
     new Project('Kitechen Assist',
       'kitchenAssist.png',
       ['angular / angularfire', 'javascript', 'firebase'],
-      'A smart Kitchen Assistant that utilizes Google action flow and Firebase ' +
-     '. Received an honorable mention from over 4,500 participants from 124 countries',
+      'A smart Kitchen Assistant',
       'https://github.com/kitchen-assistant',
       'http://kitchenassist.me/'),
     new Project(
@@ -28,12 +27,12 @@ export class ProjectsComponent implements OnInit {
     new Project( 'LakerPolling',
       'lakerPolling.png',
       ['java-spring', 'javascript', 'css', 'Am-Charts'],
-      'An open source clicker software that enables for in class and online polling and class participation.',
+      'An open source clicker software',
       'https://github.com/PK4ever/laker-polling'),
-    new Project( 'OZEvents',
+    new Project( 'MSSL',
       'msslHome.png',
       ['java-spark', 'postgresql'],
-      'The very first full-stack application that I built while experimenting with different java web frameworks. ',
+      'A local Soccer League CMA',
       'https://github.com/PK4ever/mssl', 'https://mssl.herokuapp.com/'),
   ];
   constructor() { }

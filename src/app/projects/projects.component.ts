@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   projects = [
-    new Project('Kitechen Assist',
+    new Project('Kitchen Assist',
       'kitchenAssist.png',
       ['angular / angularfire', 'javascript', 'firebase'],
       'A smart Kitchen Assistant',

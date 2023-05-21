@@ -1,33 +1,8 @@
-<div class="row projects-container">
-  <div class="col-sm-4 text-center projcol" *ngFor="let project of projects">
-    <div class="panel">
-      <div class="container">
-        <img src="../../assets/{{project.imageUrlName}}" width="100%" class="image">
-        <div class="overlay">
-          <div class="overlay-content">
-            <div class="description text-center">
-              {{project.description}}
-            </div>
-            <a href="{{project.gitUrl}}"><span *ngIf="project.gitUrl != null" class="fab fa-github"></span></a>
-            <a href="{{project.weblink}}"><span *ngIf="project.weblink != null" class="fas fa-globe"></span></a>
-          </div>
-        </div>
-      </div>
-      <div class="page-heading">
-        <h2>{{project.name}}</h2>
-        <hr>
-        <h4>{{project.techList.join('     |    ')}}</h4>
-      </div>
-      <!--<div class="panel-body">-->
-        <!--{{project.description}}-->
-      <!--</div>-->
-      <!--<div class="panel-footer">-->
-        <!--<i class="fab fa-github fa-3x"></i>-->
-        <!--<i class="fas fa-globe fa-3x"></i>-->
-      <!--</div>-->
-    </div>
+<div class="resume-container">
+  <div class="flex-container section-header">
+    <h1 id="resume-header">Resume</h1>
   </div>
-  <div class="col-sm-4 text-center projcol more">
-    <h3> Visit my <a href="https://github.com/PK4ever"><i class="fab fa-github fa-2x"></i></a> for more projects and <a href="https://codepen.io/pkwoyelo/"><i class="fab fa-codepen fa-2x"></i></a> to see some of my ui experiments</h3>
-  </div>
+ <object data="/assets/_Paul Kwoyelo_ Resume.pdf" type="application/pdf" width="100%" height="100%">
+      <p>Unable to display PDF file. <a href="/assets/_Paul Kwoyelo_ Resume.pdf">Download</a> instead.</p>
+  </object>
 </div>

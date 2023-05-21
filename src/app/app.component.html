@@ -1,44 +1,28 @@
-<mat-sidenav-container class="side_nav">
-  <mat-sidenav opened mode="side" class="mat-side-nav">
-    <img routerLink="" class="logo" src="../assets/logo.png" width="50px">
-    <ul class="nav_list">
-      <li class="nav-list-item">
-        <div routerLink="" id="home">
-        <i class="material-icons">home</i>
-          <br>
-          <span class="iconLabel">Home</span>
-        </div>
-      </li>
-      <li class="nav-list-item">
-        <div routerLink="about">
-        <i class="material-icons">perm_identity</i>
-        <br>
-          <span class="iconLabel">About Me</span>
-        </div>
-      </li>
-      <li class="nav-list-item">
-        <div routerLink="projects">
-        <i class="material-icons">assignment</i>
-        <br>
-          <span class="iconLabel">Projects</span>
-        </div>
-      </li>
-      <li class="nav-list-item">
-          <!--<i class="material-icons">assignment</i>-->
-        <a href="https://docs.google.com/document/d/1_WCspXnBsfVMJ-KgjW_j1J0hbTECmprhOUaMIwH0AJ4/edit?usp=sharing">
-          <i class="fas fa-file-download fa-2x"></i>
-          <br>
-        <span class="iconLabel">Resume</span>
-        </a>
-      </li>
-    </ul>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <main [@slideTransitionAnimation]="o.isActivated ? o.activatedRoute: ''">
-      <router-outlet #o="outlet"></router-outlet>
-    </main>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    <!-- <main [@slideTransitionAnimation]="o.isActivated ? o.activatedRoute: ''"> -->
+      <!-- <router-outlet #o="outlet"></router-outlet> -->
 
 
-
+<main>  
+  <div class = "parallax"> 
+    <section id="home-section">
+      <app-home></app-home>
+    </section>
+  </div>
+  
+  <div class = "parallax"> 
+    <section id="about-me-section">
+      <div class="skew"></div>
+      <app-about-me></app-about-me>
+   </section>
+  </div>
+  <div class = "parallax">
+    <section id="resume-section">
+      <app-projects></app-projects>
+    </section>
+    <div class = "parallax"> </div>
+  </div>
+</main>
+<footer>
+  <p>Author: Paul Kwoyelo<br>
+  <a href="paulkwoyelo@gmail.com">paulkwoyelo@gmail.com</a></p>
+</footer>

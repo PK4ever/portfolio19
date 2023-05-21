@@ -1,13 +1,43 @@
-<div class="flex-container">
-  <div><h1>Hi, I'm Paul</h1></div>
-</div>
-<div class="roles-container">
-    <div><h1>I'm a</h1></div>
-    <div #roles class="roles">
-      <div>Software Engineer</div>
-      <div>Full-stack Developer</div>
-      <div>UI/UX Designer</div>
-      <div>Front-End Developer</div>
-      <div>Back-End Developer</div>
-    </div>
+<div class="flex-container home-page parallax">
+  <!-- <div><h1>Hi, I'm Paul</h1></div> -->
+  <div>
+    <mat-card class="card">
+      <div class="title-container">
+        <!-- <div mat-card-avatar class="card-image"></div> -->
+        <mat-card-subtitle>HELLO, I'M</mat-card-subtitle>
+
+          <mat-card-title>PAUL KWOYELO</mat-card-title>
+      </div>
+      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+      <mat-card-content>
+        <div class="roles-container">
+          <span class="parenthesis">&#123;</span>
+          <div #roles class="roles">
+            <div>Software Engineer</div>
+            <div>Full-stack Developer</div>
+            <div>Front-End Developer</div>
+            <div>Back-End Developer</div>
+          </div>
+          <span class="parenthesis">&#125;</span>
+        </div>
+      </mat-card-content>
+      <mat-divider class="divider"></mat-divider>
+      <mat-card-actions>
+        <a href="#about-me-section"><button mat-button routerLink="about">About</button></a>
+        <a href="#projects"><button mat-button routerLink="projects">Projects</button></a>
+        <!-- <a href="https://docs.google.com/document/d/1_WCspXnBsfVMJ-KgjW_j1J0hbTECmprhOUaMIwH0AJ4/edit?usp=sharing"> -->
+         <a href="#resume-section"><button mat-button routerLink="resume">Resume </button></a>
+        <!-- <mat-divider class="divider"></mat-divider> -->
+      </mat-card-actions>
+      <mat-card-footer>
+        
+        <div class="footer">
+          <div>
+            <span class="material-icons md-12">email</span>
+            <span class="email">paulkwoyelo@gmail.com</span>
+          </div>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
 </div>

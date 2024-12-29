@@ -12,6 +12,7 @@ body {
   margin: 0; 
   font-family: "Times New Roman", Times, serif;
   scroll-behavior: smooth;
+  background: linear-gradient(45deg, #101010,#2c3e50);
 }
 
 /* .flex-container > div{

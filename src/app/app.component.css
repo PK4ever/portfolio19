@@ -3,10 +3,10 @@
   height: 90vh;
 }
 
-#about-me-section {
+/* #about-me-section {
   width: 100%;
   height: 950px;
-}
+} */
 
 .skew {
   height: 90%;
@@ -15,9 +15,9 @@
   transform: skewy(5deg);
 }
 
-#resume-section {
+/* #resume-section {
   height: 1000px;
-}
+} */
 
 .parallax {
   background-image: url("/assets/background-img.jpeg");
@@ -33,8 +33,7 @@
     background-attachment: scroll;
   }
 }
-
-footer {
+/* footer {
   font-family: "Lucida Console", Monaco, monospace;
   background: linear-gradient(45deg, #101010,#2c3e50);
   text-align: center;
@@ -42,4 +41,4 @@ footer {
   color: #BA68C8;
   z-index: 5;
   height: 80px;
-}
+} */
